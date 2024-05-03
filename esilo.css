@@ -77,4 +77,29 @@ section{
     margin-top: 10px;
     margin-left: 1%;
     background: aqua;
+
+}
+/*RESPONSIVIDADE*/
+@media (max-width:800px){
+    nav ul li{
+        width: 100%;
+        float: none;
+    }
+    nav ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.4s;
+    }
+    nav ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+    .cor{
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        margin-left: 22%;
+        background: transparent;
+    }
 }
